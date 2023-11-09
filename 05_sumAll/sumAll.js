@@ -1,8 +1,9 @@
-const sumAll = function (a, b) {
+"use strict";
+export const sumAll = function (a, b) {
   // the function returns number || string.
   if (a < 0 || b < 0 || !Number.isInteger(a) || !Number.isInteger(b))
     return "ERROR";
-  [ini, end] = a < b ? [a, b] : [b, a];
+  let [ini, end] = a < b ? [a, b] : [b, a];
   let total = 0;
   for (let i = ini; i <= end; i++) {
     total += i;
@@ -11,4 +12,8 @@ const sumAll = function (a, b) {
 };
 
 // Do not edit below this line
-module.exports = sumAll;
+// export default sumAll;
+// import sumAll from "./sumAll";
+// ------------------------------
+// export const sumAll = function (a, b)....
+// import { sumAll } from "./sumAll";

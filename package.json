@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "These are a series of javascript exercises intended to be used alongside the curriculum at 'The Odin Project'  They start off nice and easy, but get more involved as you progress through them.",
   "main": "index.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TheOdinProject/javascript-exercises.git"
@@ -21,12 +22,13 @@
     "jest-cli": "^29.6.4"
   },
   "scripts": {
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "eslintConfig": {
     "root": true
   },
   "jest": {
+    "transform": {},
     "testPathIgnorePatterns": [
       "generator-exercise/"
     ]

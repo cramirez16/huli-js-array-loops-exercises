@@ -1,4 +1,5 @@
-const sumAll = require("./sumAll");
+//const sumAll = require("./sumAll");
+import { sumAll } from "./sumAll";
 
 describe("sumAll", () => {
   test("sums numbers within the range", () => {
